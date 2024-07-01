@@ -15,7 +15,7 @@ const Register = () => {
     setIsOpen(false)
   }
 
-  // submit form
+  // submit form to console
   const handleSubmit = (event) => {
     event.preventDefault(); // we prevent the browser from refreshing
 
