@@ -6,14 +6,14 @@ const Register = () => {
   const { isOpen, setIsOpen } = useContext(RegisterCtx);
 
   console.log(isOpen);
-  
+
   const email = useRef();
   const password = useRef();
 
-
-  const handleCloseModal = () =>{
-    setIsOpen(false)
-  }
+  // function to close the modal
+  const handleCloseModal = () => {
+    setIsOpen(false);
+  };
 
   // submit form to console
   const handleSubmit = (event) => {
@@ -27,13 +27,11 @@ const Register = () => {
     console.log(validateEmail, validatePassword);
   };
 
-  if (!isOpen) return null
+  if (!isOpen) return null;
 
   return (
     <>
-      <div
-        className="absolute top-[20%]  left-[28%] bg-white shadow-2xl pb-8 rounded-lg"
-      >
+      <div className="absolute top-[20%]  left-[28%] bg-white shadow-2xl pb-8 rounded-lg">
         <div className="  border-b border-gray-500 mb-4 px-4 py-2 flex justify-between  ">
           <div className="div">
             <h1 className="text-2xl font-bold"> Sign Up</h1>
