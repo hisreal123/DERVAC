@@ -1,12 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import Login from "./Components/Login";
+import { RegisterCtxProvider } from "./context/RegisterCtx";
 
 const App = () => {
-
   return (
-    <div>
+    <>
       <Login />
-    </div>
+    </>
   );
 };
 

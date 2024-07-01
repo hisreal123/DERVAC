@@ -1,33 +1,30 @@
-import React, { useRef, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import Register from "./Register";
+import { RegisterCtx } from "../context/RegisterCtx";
 
 const Login = () => {
   const [message, setMessage] = useState(null);
-  const [showRegister, setShowRegister] = useState(false);
+
+  const {isOpen, setIsOpen} = useContext(RegisterCtx)
+  console.log(isOpen)
 
   const email = useRef();
   const password = useRef();
 
-  // handleShowRegister
-  const handleShowRegister = () => {
-    setShowRegister(true);
-  }
   const handleSubmit = (event) => {
     event.preventDefault(); // we prevent the browser from refreshing
 
-    
-      const validateEmail = email.current.value;
-      const validatePassword = password.current.value;
-      // check for confrim password
+    const validateEmail = email.current.value;
+    const validatePassword = password.current.value;
+    // check for confrim password
 
-      setMessage("Registration Successfull !!!");
-      console.log(validateEmail,  validatePassword);
-    
+    setMessage("Registration Successfull !!!");
+    console.log(validateEmail, validatePassword);
   };
 
   return (
     <>
-      {showRegister && <Register />}
+      <Register />
 
       <div className="w-[80%] mx-auto h-screen flex flex-col justify-center items-center">
         <h1 className="mb-4 text-3xl "> Log in </h1>
@@ -75,7 +72,7 @@ const Login = () => {
           type="submit"
           className="bg-green-600 text-white font-bold rounded-md py-2 border
           hover:border-gray-300 hover:bg-white hover:text-black px-10 mt-20"
-          onClick={handleShowRegister}
+          onClick={() => {setIsOpen(true)}}
         >
           Creat Account
         </button>

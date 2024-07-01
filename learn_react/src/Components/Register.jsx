@@ -1,14 +1,21 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import { IoClose } from "react-icons/io5";
+import { RegisterCtx } from "../context/RegisterCtx";
 
 const Register = () => {
-  const [isOpen, setIsOpen] = useState(true);
-  console.log(isOpen);
+  const { isOpen, setIsOpen } = useContext(RegisterCtx);
 
+  console.log(isOpen);
+  
   const email = useRef();
   const password = useRef();
 
 
+  const handleCloseModal = () =>{
+    setIsOpen(false)
+  }
+
+  // submit form
   const handleSubmit = (event) => {
     event.preventDefault(); // we prevent the browser from refreshing
 
@@ -20,10 +27,12 @@ const Register = () => {
     console.log(validateEmail, validatePassword);
   };
 
+  if (!isOpen) return null
+
   return (
     <>
       <div
-        className={` ${!isOpen ? 'hidden' : ''} absolute top-[20%]  left-[28%] bg-white shadow-2xl pb-8 rounded-lg`}
+        className="absolute top-[20%]  left-[28%] bg-white shadow-2xl pb-8 rounded-lg"
       >
         <div className="  border-b border-gray-500 mb-4 px-4 py-2 flex justify-between  ">
           <div className="div">
@@ -33,7 +42,7 @@ const Register = () => {
 
           <IoClose
             className="text-3xl mt-1 cursor-pointer"
-            onClick={() => { setIsOpen(false);}}
+            onClick={handleCloseModal}
           />
         </div>
         <form
