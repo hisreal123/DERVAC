@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Login from "./Components/Login";
+import Login from "./Projects/Fb/pages/Login";
 import { RegisterCtxProvider } from "./context/RegisterCtx";
-import Index from "./Topics/Reducer";
+import Index from "./Projects/Fb/index";
 
 const App = () => {
   return (

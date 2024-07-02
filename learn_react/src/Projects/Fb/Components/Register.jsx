@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
 import { IoClose } from "react-icons/io5";
-import { RegisterCtx } from "../context/RegisterCtx";
+import { RegisterCtx } from "../../../context/RegisterCtx";
+
 
 const Register = () => {
   const { isOpen, setIsOpen } = useContext(RegisterCtx);
