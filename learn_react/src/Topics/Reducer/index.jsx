@@ -2,7 +2,7 @@ import React, { useReducer } from "react";
 
 
 
-// Define the initial state of the counter
+// Define the initial state of the counter..
 const initialState = { count: 0 };
 
 // Define the reducer function
