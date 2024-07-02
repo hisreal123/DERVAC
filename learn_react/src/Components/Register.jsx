@@ -5,7 +5,6 @@ import { RegisterCtx } from "../context/RegisterCtx";
 const Register = () => {
   const { isOpen, setIsOpen } = useContext(RegisterCtx);
 
-  console.log(isOpen);
 
   const email = useRef();
   const password = useRef();
@@ -31,7 +30,12 @@ const Register = () => {
 
   return (
     <>
-      <div className="absolute top-[20%]  left-[28%] bg-white shadow-2xl pb-8 rounded-lg">
+      <div
+        className="overlay-wrapper absolute top-0 bottom-0 right-0 left-0 
+    bg-black bg-opacity-10 "
+        onClick={handleCloseModal}
+      ></div>
+      <div className=" absolute top-[20%]  left-[28%] bg-white shadow-2xl pb-8 rounded-lg">
         <div className="  border-b border-gray-500 mb-4 px-4 py-2 flex justify-between  ">
           <div className="div">
             <h1 className="text-2xl font-bold"> Sign Up</h1>

@@ -7,6 +7,7 @@ export const RegisterCtx = createContext();
 export const RegisterCtxProvider = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
 
+
   return (
     <RegisterCtx.Provider value={{ isOpen, setIsOpen }}>
       {children}

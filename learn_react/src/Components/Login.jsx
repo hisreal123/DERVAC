@@ -1,12 +1,11 @@
-import React, { useContext, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import Register from "./Register";
 import { RegisterCtx } from "../context/RegisterCtx";
 
 const Login = () => {
   const [message, setMessage] = useState(null);
 
-  const {isOpen, setIsOpen} = useContext(RegisterCtx)
-  console.log(isOpen)
+  const { isOpen, setIsOpen } = useContext(RegisterCtx);
 
   const email = useRef();
   const password = useRef();
@@ -21,6 +20,12 @@ const Login = () => {
     setMessage("Registration Successfull !!!");
     console.log(validateEmail, validatePassword);
   };
+
+  const greetUser = "Welcome Mr Man and woman and child  !!!";
+
+  useEffect(() => {
+    // alert(greetUser);
+  }, [greetUser]);
 
   return (
     <>
@@ -72,7 +77,9 @@ const Login = () => {
           type="submit"
           className="bg-green-600 text-white font-bold rounded-md py-2 border
           hover:border-gray-300 hover:bg-white hover:text-black px-10 mt-20"
-          onClick={() => {setIsOpen(true)}}
+          onClick={() => {
+            setIsOpen(true);
+          }}
         >
           Creat Account
         </button>
