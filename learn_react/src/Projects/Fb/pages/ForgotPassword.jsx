@@ -5,4 +5,6 @@ const ForgotPassword = () => {
   return <LoginForm />;
 };
 
+
+
 export default ForgotPassword;
