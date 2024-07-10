@@ -18,7 +18,7 @@ const Home = () => {
         console.log(response);
       } catch (error) {
         setError(error.message);
-      } finally {
+      } finally {   
         setIsLoading(false);
       }
     };
