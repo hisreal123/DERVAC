@@ -1,21 +1,22 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import Loader from "../components/Loader";
+import { getPostById } from "../hook/action";
 
 const PostDetails = () => {
   const [isLoading, setIsLoading] = useState(false);
   const { id } = useParams();
   const [post, setPost] = useState({});
 
+
   useEffect(() => {
-    const fetchPost = async () => {
+    const fetchPostById = async () => {
       setIsLoading(true);
       try {
-        const response = await axios.get(
-          `https://jsonplaceholder.typicode.com/posts/${id}`
-        );
-        setPost(response.data);
-        console.log(response.data);
+        const response = await getPostById({id});
+        setPost(response);
+        console.log(response);
       } catch (error) {
         console.log(error);
       }
@@ -23,10 +24,10 @@ const PostDetails = () => {
       setIsLoading(false);
     };
 
-    fetchPost();
+    fetchPostById();
   }, []);
 
-  if (isLoading) return <p>Loading ....</p>;
+  if (isLoading) return <Loader />;
 
   return (
     <div className="px-4  md:w-[70%] mx-auto">
