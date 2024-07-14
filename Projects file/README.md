@@ -25,7 +25,7 @@
 
 ### backend api
 [text](https://weston-backend-vi.onrender.com)
-### **NOTE: Your api does not come with a documentiom , you have to make a request to see data. **
+### **NOTE: Your api does not come with a documention, you have to make a request to see data. **
 
 
 # GUILDLINE
