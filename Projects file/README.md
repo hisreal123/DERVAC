@@ -30,11 +30,12 @@
 
 # GUILDLINE
 - Team lead should create a repo,
-- The default branch should be dev, and that only should be hosted on github.
-- Edd **hisreal123** as contributor.
+- The default branch should be **dev**, and that only should be hosted on vercel.
+- Add **hisreal123** as contributor.
 - Each team memmber should clone the repository.
 - Each team member should create a branch.
 - Each team member should create a pull request to the dev branch, after making changes to their branch.
+- Only the team lead is allowed to merge any PR (Pull Request).
 - All pages should be responsive
 - DO NOT PUSH YOUR **.env**
 - pages should be spliited among fellows by the team lead in aggreement with other members.
