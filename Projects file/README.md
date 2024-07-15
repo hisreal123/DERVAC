@@ -9,15 +9,16 @@
 ## Team Members
 ### Team A
 - Fellow Maryam
-- Fellow Mukhtar
-- Fellow Stanley (team lead)
+- Fellow Ibrahim
+- Fellow Stanley (project lead)
 
 
 ### Team B
 - Fellow Taiwo  
 - Fellow AbdulWarris
-- Fellow Dosu  (team lead)
-- Fellow Ibrahim
+- Fellow Dosu  (project lead)
+- Fellow Mukhtar
+
 
 
 ### figma link
