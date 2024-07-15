@@ -9,7 +9,7 @@
 ## Team Members
 ### Team A
 - Fellow Maryam
-- Fellow Mukhtar
+- Fellow Ibrahim
 - Fellow Stanley (team lead)
 
 
@@ -17,7 +17,8 @@
 - Fellow Taiwo  
 - Fellow AbdulWarris
 - Fellow Dosu  (team lead)
-- Fellow Ibrahim
+- Fellow Mukhtar
+
 
 
 ### figma link
