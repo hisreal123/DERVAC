@@ -10,13 +10,13 @@
 ### Team A
 - Fellow Maryam
 - Fellow Ibrahim
-- Fellow Stanley (team lead)
+- Fellow Stanley (project lead)
 
 
 ### Team B
 - Fellow Taiwo  
 - Fellow AbdulWarris
-- Fellow Dosu  (team lead)
+- Fellow Dosu  (project lead)
 - Fellow Mukhtar
 
 
