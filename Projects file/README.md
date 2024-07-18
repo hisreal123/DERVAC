@@ -41,4 +41,14 @@
 - DO NOT PUSH YOUR **.env**
 - pages should be spliited among fellows by the team lead in aggreement with other members.
 
+
+API_GUIDE
+
+/api  "this returns all the data for consumption"
+/api/properties/categories/ " this returns specific categories"
+/api/blog " this returns the whole post in the blog"
+/api/blog/{id} " returns post of the id arguement"
+
+
+
 # Good Luck !!!!!!
