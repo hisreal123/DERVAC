@@ -1,7 +1,7 @@
 # Kindly check for your name to see project assigned to you !!!.
 
 # GUIDE
-  - You are not provided with an API
+  - You are not provided with an API, which means you are to make research for one
   - You are not provided with any design sample
   - You are permitted to use any technology of yours (Vite or any)
   - You are to work on the project alone
