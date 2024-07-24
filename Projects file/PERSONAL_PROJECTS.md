@@ -25,12 +25,12 @@
     Display the photos in a grid layout.
     Use Tailwind CSS for styling.
 
-##  Fellow Taiwo - Weather App
+##  Fellow Ibrahim - Weather App
     Build a weather dashboard that fetches and displays weather data for multiple cities.
     Allow users to add and remove cities.
     Style the app with Tailwind CSS to present the data attractively.
 
-## Fellow Ibrahim - To do App
+## Fellow Taiwo - To do App
     Build a Todo Application that fetches data and displays Todos from an Api
     Allow users to add and remove Todos
     Style the dashboard with Tailwind CSS to present the data attractively.
